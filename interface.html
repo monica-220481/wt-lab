@@ -1,0 +1,217 @@
+<html>
+    <head>
+        <title>
+           SPOTIFY CLONE
+        </title>
+        <style>
+            body {
+                font-family:"Arial,sans-serif";
+                background-color:black;
+                color:white;
+            }
+
+            .container {
+                display:flex;
+            }
+
+            .button{
+                padding:10px 20px;
+                background-color:green;
+                border:none;
+                border-radius:20px;
+                color:white;
+                cursor:pointer;
+            }
+
+            .sidebar {
+                width: 250px;
+                background-color: #121212;
+            }
+
+            .logo-container {
+                display:flex;
+                align-items:center;
+                gap: 10px;
+                margin-top: 30px;
+            }
+
+
+            .logo-text{
+                font-size:22px;
+                font-weight:bold;
+            }
+
+
+            .menu p{
+                padding:15px 20px;
+                margin:0;
+                cursor:pointer;
+            }
+
+            .menu p:hover{
+                background-color:gray;
+            }
+
+            .main{
+                flex:1;
+                padding:20px;
+            }
+
+            .header {
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+            }
+
+            .header-search input{
+                padding:12px;
+                font-size:18px;
+                border-radius:25px;
+                border:none;
+                outline:none;
+                height:55px;
+                width:350px;
+            }
+            
+
+            .playlists {
+                display:flex;
+                gap:20px;
+            }
+
+            .singers{
+                display:flex;
+                gap:20px;
+            }
+
+            .card {
+                padding:10px;
+                border-radius:8px;
+                width:150px;
+                cursor:pointer;
+            }
+
+            .card img{
+                height:50%;
+                width:100%;
+                border-radius:8px;
+            }
+
+            .card:hover {
+                background-color:gray;
+            }
+
+            .button{
+                padding:10px 20px;
+                background-color:green;
+                border:none;
+                border-radius:50px;
+                color:white;
+                cursor:pointer;
+            }
+
+            .button:hover{
+                background-color:black;
+            }
+
+            #side{
+                display:inline-block;
+            }
+
+        </style>
+    </head>
+    <body> 
+        <div class="container">
+            <div class="sidebar">
+                <div  class="logo">
+                
+                    <img src="C:\Users\MONICA NAMBURI\Desktop\spotify\spotify_image.webp" height="60px" width="60px" style="vertical-align: middle; margin-left: 10px;">
+                    <b>Spotify</b>
+                </div>
+                <div class="menu">
+                    <p>Home</p>
+                    <p>Premium</p>
+                    <p>Your library</p>
+                    <hr style="margin:20px 0;border:0.5px solid #333;">
+                    <p>Create Playlist</p>
+                    <p>Liked Songs</p>
+                    <a href="singers.html" target="_blank" style="color:white;text-decoration:none;"><p>Singers</p></a>
+                </div>
+            </div>
+            <div class="main">
+                <div class="header">
+                    <h2>HELLO WELCOME TO SPOTIFY...</h2>
+                    <input type="text" placeholder="search the song">
+                    <button class="button">Profile</button>
+                </div>
+                <h2>Recently Played</h2>
+                <div class="playlists">
+                    <div class="card">
+                        <a href="https://youtu.be/5JoPeWHkKJg?si=rq_6fnTDjes9eE7i" target="_blank"><img src="C:\Users\MONICA NAMBURI\Desktop\spotify\top_hits.jpg" ></a>
+                       <audio controls style="width:150px;height:40px;margin-top:10px;">
+                            <source src="C:\Users\MONICA NAMBURI\Desktop\spotify\Boom_Boom.mp3">
+                        </audio>
+                        <h4>Top Hits</h4>
+                        <p>Best of Today</p>
+                    </div>
+                    <div class="card">
+                        <a href="https://youtu.be/LXaBrusqBcI?si=IkcyyH_boS3zzuLP" target="_blank"><img src="C:\Users\MONICA NAMBURI\Desktop\spotify\chill_hits.webp"></a>
+                        <audio controls style="width:150px;height:40px;margin-top:10px;">
+                            <source src="C:\Users\MONICA NAMBURI\Desktop\spotify\Rambai_Neemeeda_Naku.mp3">
+                        </audio>
+                        <h4>Chill Vibes</h4>
+                        <p>Relax and Enjoy</p>
+                    </div>
+                    <div class="card">
+                        <a href="https://youtu.be/ZhIyyO4JMnA?si=P7qFe_X4OVcbwFL2" target="_blank"><img src="C:\Users\MONICA NAMBURI\Desktop\spotify\workout.jpg"></a>
+                        <audio controls style="width:150px;height:40px;margin-top:10px;">
+                            <source src="C:\Users\MONICA NAMBURI\Desktop\spotify\Merupaisagara-64kbps.mp3">
+                        </audio>
+                        <h4>Workout</h4>
+                        <p>Energy Booster</p>
+                    </div>
+                    <div class="card">
+                        <a href="https://youtu.be/nu4bFQwFt-s?si=qPtLSZnJn0zcxAZZ" target="_blank"><img src="C:\Users\MONICA NAMBURI\Desktop\spotify\party.webp"></a>
+                        <audio controls style="width:150px;height:40px;margin-top:10px;">
+                            <source src="C:\Users\MONICA NAMBURI\Desktop\spotify\Family Party-64kbps.mp3">
+                        </audio>
+                        <h4>Party Songs</h4>
+                        <p>Enjoy the Party</p>
+                    </div>
+                    <div class="card">
+                        <a href="https://youtu.be/TfeXDgNXsTs?si=Tao-XD2y7TY2GaQI" target="_blank"><img src="C:\Users\MONICA NAMBURI\Desktop\spotify\sad.webp"></a>
+                        <audio controls style="width:150px;height:40px;margin-top:10px;">
+                            <source src="C:\Users\MONICA NAMBURI\Desktop\spotify\Yetu Pone-128kbps.mp3">
+                        </audio>
+                        <h4>Sad Songs</h4>
+                        <p>DONT FEEL...</p>
+                    </div>
+                </div>
+                <h2> Suggested Songs..</h2>
+                <div class="singers">
+                    <div class="card">
+                        <a href="sidsriram.html" target="_blank"><img src="C:\Users\MONICA NAMBURI\Desktop\spotify\sid_sriram.webp" ></a>
+                        <h4>sid sriram top hits</h4>
+                    </div>
+                    <div class="card">
+                        <img src="C:\Users\MONICA NAMBURI\Desktop\spotify\karthik.webp"></iframe>
+                        <h4>karthik top telugu hits</h4>
+                    </div>
+                    <div class="card">
+                       <img src="C:\Users\MONICA NAMBURI\Desktop\spotify\dsp.webp">
+                        <h4>DSP top telugu hits</h4>
+                    </div>
+                    <div class="card">
+                        <img src="C:\Users\MONICA NAMBURI\Desktop\spotify\devotional.jpg">
+                        <h4>Devotional Songs</h4>
+                    </div>
+                    <div class="card">
+                        <img src="C:\Users\MONICA NAMBURI\Desktop\spotify\chinmayi.webp">
+                        <h4>Chinmayi songs</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer style="text-align:center;"><marquee><b>ENJOY THE BEST MUSIC USING SPOTIFY</b></marquee></footer>
+    </body>
+</html>
