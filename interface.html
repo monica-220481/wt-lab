@@ -18,7 +18,7 @@
                     <p>Premium</p>
                     <p>Your library</p>
                     <hr style="margin:20px 0;border:0.5px solid #333;">
-                    <p>Create Playlist</p>
+                    <p id="create-playlist-btn" style="cursor: pointer;">Create Playlist</p>
                     <p>Liked Songs</p>
                     <a href="singers.html" target="_blank" style="color:white;text-decoration:none;"><p>Singers</p></a>
                 </div>
@@ -26,8 +26,13 @@
             <div class="main">
                 <div class="header">
                     <h2>HELLO WELCOME TO SPOTIFY...</h2>
-                    <input type="text" placeholder="search the song">
-                    <button class="button">Profile</button>
+                    <input type="text" id="song-search" placeholder="search the song">
+                    <button class="button" id="profile-btn">Profile</button>
+                </div>
+                <div id="js-status-bar" style="display:flex; justify-content:space-between; padding:10px 20px; background-color:#1e1e1e; margin-bottom:10px; border-radius:8px;">
+                    <span id="brand-display" style="color:#1db954; font-weight:bold;"></span>
+                    <span id="user-info-display" style="color:white;">Welcome, Guest</span>
+                    <span id="liked-count-display" style="color:white;">Liked Songs: 0</span>
                 </div>
                 <h2>Recently Played</h2>
                 <div class="playlists">
@@ -97,6 +102,7 @@
                 </div>
             </div>
         </div>
-        <footer style="text-align:center;"><marquee><b>ENJOY THE BEST MUSIC USING SPOTIFY</b></marquee></footer>
+        <footer style="text-align:center;"><marquee><b id="footer-text">ENJOY THE BEST MUSIC USING SPOTIFY</b></marquee></footer>
+        <script src="spotify_interactions.js"></script>
     </body>
 </html>
